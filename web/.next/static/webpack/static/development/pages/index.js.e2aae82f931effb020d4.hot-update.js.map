@@ -1,0 +1,1 @@
+{"version":3,"file":"static/webpack/static/development/pages/index.js.e2aae82f931effb020d4.hot-update.js","sources":["webpack:///./components/UI/Text.js"],"sourcesContent":["import styled from '@emotion/styled';\n\nconst Text = styled.div`\n\n`;\n\nexport default Text"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAEA;AAIA;;;;A","sourceRoot":""}

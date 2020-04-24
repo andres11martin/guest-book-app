@@ -1,13 +1,30 @@
-import Link from 'next/link';
-import Head from '../components/head';
-import Nav from '../components/nav';
+import Header from "../components/UI/Header"
+import MessageForm from "../components/MessageForm"
+import Global from "../components/UI/Global"
+import Container from "../components/UI/Container"
+import Text from "../components/UI/Text"
+import Link from 'next/link'
 
-const App = function () {
-  (
+const linkStyle = {
+  textAlign: "center"
+}
 
-    <h1>Hello world!</h1>
+const App = () => {
+  return (
+    <Global>
+      <Header />
+      <Container>
+        <Text>
+          <h1>Guest Book</h1>
+          <p>Now is your chance to be heard (or read)!</p>
+          <Link href="/messages"><a style={linkStyle}>Check past messages!</a></Link>
+        </Text>
+        <MessageForm />
+
+
+      </Container>
+    </Global>
   )
-
 
 };
 
