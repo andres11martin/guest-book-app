@@ -4,9 +4,11 @@ var Schema = mongoose.Schema;
 
 var PostSchema = new Schema({
     name: { type: String, required: true },
-    content: { type: String, required: true },
     city: { type: String, required: true },
-    date: { type: Date, default: Date.now }
+    message: { type: String, required: true },
+
+}, {
+    timestamps: true,
 });
 
 var Post = mongoose.model("Post", PostSchema);
